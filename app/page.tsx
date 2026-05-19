@@ -115,117 +115,183 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen">
-      <div className="mx-auto max-w-4xl px-6 py-14">
-        <header className="mb-10 flex flex-col sm:flex-row items-start sm:items-center gap-6">
-          <div className="flex-shrink-0 w-24">
-            <Image
-              src="/profile_photo.jpg"
-              width={160}
-              height={160}
-              alt="Vihang Kale"
-              className="rounded-xl object-contain"
-              priority
-            />
+    <main className="min-h-screen pb-28">
+      <div className="mx-auto flex max-w-6xl gap-10 px-6 py-14">
+        <aside className="hidden xl:block w-64 shrink-0">
+          <div className="sticky top-8 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
+              Navigate
+            </p>
+            <nav className="mt-4 space-y-3 text-sm">
+              <a
+                href="#summary"
+                className="block rounded-xl px-3 py-2 text-slate-700 transition hover:bg-slate-50"
+              >
+                Summary
+              </a>
+              <a
+                href="#skills"
+                className="block rounded-xl px-3 py-2 text-slate-700 transition hover:bg-slate-50"
+              >
+                Skills
+              </a>
+              <a
+                href="#experience"
+                className="block rounded-xl px-3 py-2 text-slate-700 transition hover:bg-slate-50"
+              >
+                Experience
+              </a>
+              <a
+                href="#projects"
+                className="block rounded-xl px-3 py-2 text-slate-700 transition hover:bg-slate-50"
+              >
+                Selected projects
+              </a>
+            </nav>
           </div>
+        </aside>
 
-          <div className="w-full">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-              <div>
-                <h1 className="text-3xl font-semibold text-slate-900">
-                  Vihang Kale
-                </h1>
-                <p className="mt-1 text-sm text-slate-700">
-                  Frontend Engineer (React · Next.js · TypeScript)
-                </p>
-                <p className="mt-2 text-sm text-slate-700">
-                  S.B Road, Pune, Maharashtra
-                </p>
+        <div className="flex-1">
+          <header className="mb-10 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+            <div className="flex-shrink-0 w-24">
+              <Image
+                src="/profile_photo.jpg"
+                width={160}
+                height={160}
+                alt="Vihang Kale"
+                className="rounded-xl object-contain"
+                priority
+              />
+            </div>
+
+            <div className="w-full">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                <div>
+                  <h1 className="text-3xl font-semibold text-slate-900">
+                    Vihang Kale
+                  </h1>
+                  <p className="mt-1 text-sm text-slate-700">
+                    Frontend Engineer (React · Next.js · TypeScript)
+                  </p>
+                  <p className="mt-2 text-sm text-slate-700">
+                    S.B Road, Pune, Maharashtra
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-slate-700">
+                <a
+                  href="mailto:vihangkale@zohomail.in"
+                  className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 transition hover:border-slate-300 hover:bg-slate-50"
+                >
+                  <FiMail /> Email
+                </a>
+                <a
+                  href="https://linkedin.com/in/vihangkale"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 transition hover:border-slate-300 hover:bg-slate-50"
+                >
+                  <FaLinkedin /> LinkedIn
+                </a>
+                <a
+                  href="https://github.com/vihangkale"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 transition hover:border-slate-300 hover:bg-slate-50"
+                >
+                  <FaGithub /> GitHub
+                </a>
+                <a
+                  href="/Vihang_Kale_Resume.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-900 shadow-sm hover:border-slate-300"
+                >
+                  <FiFileText /> Resume
+                </a>
               </div>
             </div>
+          </header>
 
-            <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-slate-700">
+          <div className="xl:hidden fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 bg-white/95 px-4 py-3 shadow-xl backdrop-blur-sm">
+            <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 text-sm">
               <a
-                href="mailto:vihangkale@zohomail.in"
-                className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 transition hover:border-slate-300 hover:bg-slate-50"
+                href="#summary"
+                className="flex-1 rounded-full border border-slate-200 bg-slate-50 px-3 py-2 text-center text-slate-700 transition hover:bg-slate-100"
               >
-                <FiMail /> Email
+                Summary
               </a>
               <a
-                href="https://linkedin.com/in/vihangkale"
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 transition hover:border-slate-300 hover:bg-slate-50"
+                href="#skills"
+                className="flex-1 rounded-full border border-slate-200 bg-slate-50 px-3 py-2 text-center text-slate-700 transition hover:bg-slate-100"
               >
-                <FaLinkedin /> LinkedIn
+                Skills
               </a>
               <a
-                href="https://github.com/vihangkale"
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 transition hover:border-slate-300 hover:bg-slate-50"
+                href="#experience"
+                className="flex-1 rounded-full border border-slate-200 bg-slate-50 px-3 py-2 text-center text-slate-700 transition hover:bg-slate-100"
               >
-                <FaGithub /> GitHub
+                Experience
               </a>
               <a
-                href="/Vihang_Kale_Resume.pdf"
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-900 shadow-sm hover:border-slate-300"
+                href="#projects"
+                className="flex-1 rounded-full border border-slate-200 bg-slate-50 px-3 py-2 text-center text-slate-700 transition hover:bg-slate-100"
               >
-                <FiFileText /> Resume
+                Projects
               </a>
             </div>
           </div>
-        </header>
 
-        <section className="mb-10">
-          <h2 className="text-lg font-medium text-slate-900">Summary</h2>
-          <p className="mt-3 text-slate-700 leading-7">
-            Senior full-stack developer with ~4.8 years of experience delivering
-            React and Next.js applications together with backend modules for
-            enterprise platforms. I bring strong frontend polish plus API
-            integration, automation, and performance improvements, with
-            AI-assisted development workflows that sharpen delivery and quality.
-          </p>
-        </section>
+          <section id="summary" className="mb-10">
+            <h2 className="text-lg font-medium text-slate-900">Summary</h2>
+            <p className="mt-3 text-slate-700 leading-7">
+              Senior full-stack developer with ~4.8 years of experience
+              delivering React and Next.js applications together with backend
+              modules for enterprise platforms. I bring strong frontend polish
+              plus API integration, automation, and performance improvements,
+              with AI-assisted development workflows that sharpen delivery and
+              quality.
+            </p>
+          </section>
 
-        <section className="mb-10">
-          <h2 className="text-lg font-medium text-slate-900">Skills</h2>
-          <div className="mt-4 flex flex-wrap gap-3">
-            {skills.map((s) => (
-              <SkillWithIcon key={s} skill={s} />
-            ))}
-          </div>
-          <div className="mt-4">
-            <p className="text-sm text-slate-600">AI & tools</p>
-            <div className="mt-3 flex flex-wrap gap-3">
-              {aiTools.map((t) => (
-                <SkillWithIcon key={t} skill={t} />
+          <section id="skills" className="mb-10">
+            <h2 className="text-lg font-medium text-slate-900">Skills</h2>
+            <div className="mt-4 flex flex-wrap gap-3">
+              {skills.map((s) => (
+                <SkillWithIcon key={s} skill={s} />
               ))}
             </div>
-          </div>
-        </section>
+            <div className="mt-4">
+              <p className="text-sm text-slate-600">AI & tools</p>
+              <div className="mt-3 flex flex-wrap gap-3">
+                {aiTools.map((t) => (
+                  <SkillWithIcon key={t} skill={t} />
+                ))}
+              </div>
+            </div>
+          </section>
 
-        <section className="mb-10">
-          <h2 className="text-lg font-medium text-slate-900">Experience</h2>
-          <div className="mt-6 grid gap-4">
-            {experiences.map((e) => (
-              <ExperienceCard key={`${e.company}-${e.role}`} {...e} />
-            ))}
-          </div>
-        </section>
+          <section id="experience" className="mb-10">
+            <h2 className="text-lg font-medium text-slate-900">Experience</h2>
+            <div className="mt-6 grid gap-4">
+              {experiences.map((e) => (
+                <ExperienceCard key={`${e.company}-${e.role}`} {...e} />
+              ))}
+            </div>
+          </section>
 
-        <section className="mb-10">
-          <h2 className="text-lg font-medium text-slate-900">
-            Selected projects
-          </h2>
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
-            {projects.map((p) => (
-              <ProjectCard key={p.title} {...p} />
-            ))}
-          </div>
-        </section>
+          <section id="projects" className="mb-10">
+            <h2 className="text-lg font-medium text-slate-900">
+              Selected projects
+            </h2>
+            <div className="mt-6 grid gap-4 md:grid-cols-2">
+              {projects.map((p) => (
+                <ProjectCard key={p.title} {...p} />
+              ))}
+            </div>
+          </section>
+        </div>
       </div>
     </main>
   );
