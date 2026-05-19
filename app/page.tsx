@@ -171,7 +171,7 @@ export default function Home() {
                     Vihang Kale
                   </h1>
                   <p className="mt-1 text-sm text-slate-700">
-                    Frontend Engineer (React · Next.js · TypeScript)
+                    Full-Stack Developer (React · Node.js · TypeScript)
                   </p>
                   <p className="mt-2 text-sm text-slate-700">
                     S.B Road, Pune, Maharashtra
